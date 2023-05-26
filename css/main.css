@@ -79,37 +79,50 @@ a:hover {
 /* Logo */
 
 .logo {
-  display: inline-block;
-  margin-right: 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 100px;
+  margin-bottom: 30px;
 }
 
 .logo img {
-  width: 50px;
+  width: 40px;
   cursor: pointer;
-  vertical-align: middle;
+  vertical-align: top;
+
 }
 
+.logo span {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+
+}
 
 /* Navbar */
 
 .topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   list-style-type: none;
   overflow: hidden;
-  background-color: white;
+  background-color: #1e1e1e;
   box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.20);
   transition: all .2s ease-in;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 20px 10px;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: black;
+  color: #f2f2f2;
   text-align: center;
-  padding: 24px 26px;
   text-decoration: none;
   font-size: 17px;
+  padding: 20px;
+  margin-right: 20px;
 }
 
 .topnav a:hover {
@@ -121,7 +134,9 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
